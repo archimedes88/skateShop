@@ -1,0 +1,189 @@
+body {
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFF;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.container ul a {
+    text-decoration: none;
+}
+
+#center h3 {
+    text-align: center;
+}
+
+a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.container h3 a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.container h3 a:hover {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#form {
+    color: #000;
+}
+
+.container h3 a:active {
+    color: #0000FF;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+div#random a.linked {
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    background: rgba(0, 0, 0, .9);
+}
+
+ul#change a {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+ul#change a:hover {
+    background: #000;
+    color: #FFF;
+}
+
+ul#change li {
+    border-top: 1px solid #9d9d9d;
+}
+
+#height {
+    height: 100%;
+}
+
+#height2 {
+    height: 100%;
+}
+
+#height3 {
+    height: 100%;
+}
+
+#spacer {
+    height: 400px;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.logo {
+    width: 35%;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    margin-top: -10%;
+    color: #FFF;
+}
+
+#copyright {
+    margin: -12px 0 15px .5%;
+}
+
+.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel .item,
+.carousel .item.active,
+.carousel .carousel-inner {
+    width: 100%;
+    height: 600px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.well {
+    height: 300px;
+}
+
+.navbar-inverse {
+    background: rgba(0, 0, 0, .8);
+}
+
+#pagination {
+    width: 100%;
+}
+
+#right {
+    text-align: right;
+}
+
+#left {
+    text-align: left;
+}
+
+legend {
+    color: #FFF;
+}
+div.black input {
+  color: #000;
+}
+
+div.black input.white {
+  color: #FFF;
+}
+
+.black label {
+  color: #FFF;
+}
+
+.count {
+    background: #f57f25;
+    border-radius: 200px;
+    width: 15px;
+    text-align: center;
+    color: #162c54;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+
+#size {
+  width: 300px;
+}
