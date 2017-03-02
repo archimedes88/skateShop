@@ -61,10 +61,15 @@ foreach($count as $key=>$count){
             </div>
         </form>
         <br/>
+                <div id="output">
                 <?php    
                     if(!empty($_GET)){
                         $searchPar = $_GET['search'];
-                        $sql = "SELECT * FROM inventory WHERE title LIKE '%$searchPar%' OR category LIKE '%$searchPar%'";
+                        $sql = "SELECT * FROM inventory 
+                                WHERE title 
+                                LIKE '%$searchPar%' 
+                                OR category 
+                                LIKE '%$searchPar%'";
                         $results = $conn->prepare($sql);
                         $results->execute();
                         $output = $results->setFetchMode(PDO::FETCH_ASSOC);
@@ -92,11 +97,21 @@ foreach($count as $key=>$count){
                             }
                     }
                 ?>
+                </div>
             <hr>
             <div id="copyright">&copy; Copyright Ryan's Skateshop <?php echo date("Y"); ?></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function instantSearch(){
+        var searchTxt = $("input#size").val();
+        $.get("searchFunction.php", {searchVal: searchTxt}, function(data){
+            $("#output").html(data);
+        });
     
+    }
+    $("input#size").on("keyup", instantSearch);
+    </script>
 </body>
 </html>
